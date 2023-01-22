@@ -27,3 +27,8 @@ sudo docker container run --detach --name ubuntu -e LANG=pt_BR.UTF-8 -ti -p 80:8
 ```sh
 sudo docker exec -u 0 -ti ID/NAME bash
 ```
+
+## Update a container so it can starts with OS
+```sh
+sudo docker update --restart=always ID/NAME
+```
